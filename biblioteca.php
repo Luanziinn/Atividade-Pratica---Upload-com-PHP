@@ -6,7 +6,7 @@ $sql = "SELECT __________ FROM jogos ORDER BY id DESC";
 
 $stmt = $pdo->query($sql);
 
-<!-- Buscar resultados -->
+//Buscar todos os registros
 $jogos = $stmt->__________(PDO::FETCH_ASSOC);
 
 
