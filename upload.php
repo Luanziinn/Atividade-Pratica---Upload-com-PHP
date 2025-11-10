@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
         $sql = "INSERT INTO jogos (nome, caminho, tamanho) 
-                VALUES  (:____, :____, :____)”;
+                VALUES  (:____, :____, :____)";
         $stmt = $pdo->prepare($sql);
         // bindParam...
         // bindParam…
