@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Validar tamanho máximo (2MB)
-    if ($arquivo["size"] > ________ ) {
+    if ($arquivo["size"] > 2 * 1024 * 1024 ) {
         die("Arquivo muito grande (máx. 2MB)");
     }
 
@@ -38,6 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $sql = "INSERT INTO jogos (nome, caminho, tamanho) 
                 VALUES  (:____, :____, :____)”;
+		$stmt = $pdo->prepare($sql);
         // bindParam...
         // bindParam…
         // bindParam...
