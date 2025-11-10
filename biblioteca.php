@@ -34,7 +34,7 @@ $jogos = $stmt->__________(PDO::FETCH_ASSOC);
             <small><?= $jogo["tamanho"] ?> bytes</small><br>
 
             <!-- Adicionar link de exclusão -->
-            <a href="excluir.php?id=<?= _________ ?>"
+            <a href="excluir.php?id=<?= [_________] ?>"
                onclick="return confirm('Tem certeza que deseja excluir?')">
                Excluir jogo
             </a>
